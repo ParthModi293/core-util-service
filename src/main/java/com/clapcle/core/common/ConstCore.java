@@ -1,6 +1,6 @@
-package com.core.coreutilservice.common;
+package com.clapcle.core.common;
 
-public class Const {
+public class ConstCore {
 
     public static final class rCode {
 

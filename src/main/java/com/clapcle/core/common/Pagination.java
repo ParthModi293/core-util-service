@@ -1,4 +1,4 @@
-package com.core.coreutilservice.common;
+package com.clapcle.core.common;
 
 
 import lombok.Data;

@@ -1,9 +1,9 @@
-package com.core.coreutilservice.globalException;
+package com.clapcle.core.globalException;
 
-import com.core.coreutilservice.common.Const;
-import com.core.coreutilservice.common.ResponseBean;
-import com.core.coreutilservice.exception.FileNotFoundException;
-import com.core.coreutilservice.exception.ValidationException;
+import com.clapcle.core.common.ConstCore;
+import com.clapcle.core.exception.FileNotFoundException;
+import com.clapcle.core.common.ResponseBean;
+import com.clapcle.core.exception.ValidationException;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -43,7 +43,7 @@ public class GlobalExceptionHandler {
         ResponseBean<Map<String, String>> errorResponse = new ResponseBean<>();
         errorResponse.setRStatus(HttpStatus.BAD_REQUEST);
         errorResponse.setRMsg("Validation Failed");
-        errorResponse.setRCode(Const.rCode.BAD_REQUEST);
+        errorResponse.setRCode(ConstCore.rCode.BAD_REQUEST);
         errorResponse.setDisplayMessage(errors.toString());
 
         return new ResponseEntity<>(errorResponse, errorResponse.getRStatus());

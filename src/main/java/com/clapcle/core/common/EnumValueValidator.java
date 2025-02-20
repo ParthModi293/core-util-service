@@ -1,15 +1,15 @@
-package com.core.coreutilservice.common;
+package com.clapcle.core.common;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 
 
 
-public class EnumValueValidator implements ConstraintValidator<Enum, String> {
-    private Enum annotation;
+public class EnumValueValidator implements ConstraintValidator<EnumCore, String> {
+    private EnumCore annotation;
 
     @Override
-    public void initialize(Enum annotation) {
+    public void initialize(EnumCore annotation) {
         this.annotation = annotation;
     }
 

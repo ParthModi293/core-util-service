@@ -1,4 +1,4 @@
-package com.core.coreutilservice.common;
+package com.clapcle.core.common;
 
 
 import jakarta.validation.Constraint;
@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 @Constraint(validatedBy = {EnumValueValidator.class})
 @Target({ElementType.METHOD, ElementType.FIELD, ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Enum {
+public @interface EnumCore {
 
     enum Y_N {
         Y("Y"),

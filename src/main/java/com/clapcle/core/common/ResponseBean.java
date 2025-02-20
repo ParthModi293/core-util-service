@@ -1,4 +1,4 @@
-package com.core.coreutilservice.common;
+package com.clapcle.core.common;
 
 import lombok.Data;
 import org.springframework.http.HttpStatus;
@@ -37,21 +37,6 @@ public class ResponseBean<T> {
         this(HttpStatus.OK, rData);
     }
 
-    public ResponseBean(HttpStatus responseCode, String sMessage, T rData) {
-        this.rStatus = responseCode;
-        this.rCode = responseCode.value();
-        this.rMsg = sMessage;
-        this.rData = rData;
-    }
-
-    public ResponseBean(HttpStatus responseCode, String sMessage, String displayMessage, T rData) {
-        this.rStatus = responseCode;
-        this.rCode = responseCode.value();
-        this.rMsg = sMessage;
-        this.rData = rData;
-        this.displayMessage = displayMessage;
-    }
-
     public ResponseBean(HttpStatus responseCode, int rCode, String sMessage, String displayMessage, T rData) {
         this.rStatus = responseCode;
         this.rCode = rCode;
@@ -68,6 +53,7 @@ public class ResponseBean<T> {
         this.displayMessage = displayMessage;
         this.pagination = pagination;
     }
+
 
 
 

@@ -1,4 +1,4 @@
-package com.core.coreutilservice.common;
+package com.clapcle.core.common;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;

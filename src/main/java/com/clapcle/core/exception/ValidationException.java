@@ -1,4 +1,4 @@
-package com.core.coreutilservice.exception;
+package com.clapcle.core.exception;
 
 
 import org.springframework.http.HttpStatus;
